@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: idroid;
+    src: url(fontes/idroid.otf) format(opentype);
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+}
+
+body {
+    background-color: #83E1AD;
+
+    header {
+        background-image: linear-gradient(to bottom, #3DDC84, #063D1E);
+        color: #ffffff;
+        width: 100%;
+        height: 225px;
+
+        #top {
+            text-align: center;
+            width: 400px;
+            margin: 0px auto 15px auto;
+            text-shadow: 2px 2px 2px #00000083;
+
+            h1 {
+                font: normal 400 40px "Bebas Neue", sans-serif;
+                margin-top: 20px;
+            }
+
+        }
+
+        nav {
+            padding-left: 15px;
+            box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.462);
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            font: normal bold 18px "Arial", sans-serif;
+            color: #ffffff;
+            padding: 10px 10px;
+            margin-left: 5px;
+            transition: 0.5s;
+        }
+
+        .button:hover {
+            background-color: #288d55;
+            color: #063D1E;
+            border-radius: 5px 5px 0px 0px;
+            cursor: pointer;
+        }
+    }
+
+
+
+    main {
+        background-color: #ffffff;
+        width: 820px;
+        height: auto;
+        margin: auto;
+        border-radius: 0px 0px 10px 10px;
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.465);
+        transition: 1s;
+
+        article>h2 {
+            font: normal 2em "idroid", sans-serif;
+            color: #063d1e;
+            margin-left: 20px;
+        }
+
+        article>h3 {
+            font: normal 25px "idroid", sans-serif;
+            background-image: linear-gradient(to right, #83e1ad98, #ffffff);
+            color: #288d55;
+            margin-left: 20px;
+        }
+
+        p {
+            text-align: justify;
+            text-indent: 20px;
+            margin: 20px;
+
+            a {
+                font-weight: 600;
+                color: #2d955c;
+                text-decoration: none;
+                padding: 5px;
+            }
+
+            a:hover {
+                background-color: #3ddc859a;
+                text-decoration: underline;
+            }
+
+            a::after {
+                content: '🔗';
+            }
+
+            .destaque {
+                color: #288d55;
+                font-weight: 600;
+
+            }
+        }
+
+        img {
+            display: flex;
+            margin: auto;
+        }
+
+        #video {
+            display: flex;
+            justify-content: center;
+            background-color: #063D1E;
+            padding: 15px 0px;
+        }
+
+        #tabela {
+            background-color: #83e1ad8e;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.465);
+
+            h2 {
+                font-weight: 600;
+                color: #ffffff;
+                background-color: #36c275;
+                text-shadow: 2px 2px 2px #00000083;
+                padding: 10px;
+                border-radius: 10px 10px 0px 0px;
+            }
+
+            p {
+                margin-bottom: 10px;
+            }
+
+            ul {
+                list-style-type: none;
+                columns: 2;
+                list-style-position: inside;
+            }
+
+            li::before {
+                content: '✔';
+            }
+        }
+    }
+
+    @media screen and (max-width: 850px) {
+        main {
+
+            width: 700px;
+        }
+    }
+
+    @media screen and (max-width: 750px) {
+        main {
+
+            width: 525px;
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        main {
+
+            width: 450px;
+        }
+    }
+
+    footer {
+        background-color: #063D1E;
+        color: #ffffff;
+        text-align: center;
+        padding: 5px;
+        margin-top: 20px;
+
+        .destaque {
+            font-weight: 700;
+        }
+    }
+
+}
