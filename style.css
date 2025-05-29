@@ -217,7 +217,21 @@ body {
 @media screen and (max-width: 620px) {
     main {
 
-        width: 414px;
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main {
+
+        width: 370px;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    main {
+
+        width: 320px;
     }
 }
 
