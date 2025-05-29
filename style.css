@@ -217,15 +217,7 @@ body {
 @media screen and (max-width: 620px) {
     main {
 
-        width: 430px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-
-    main {
-
-        width: 400px;
+        width: 414px;
     }
 }
 
